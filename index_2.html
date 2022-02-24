@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción || VueJS</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- Principal -->
+        <mi-componente></mi-componente>
+    </div>
+    <br> pero previamente se debe registrar y generar la instancia para cada componente a utilizar, como se muestra continuación.
+
+    <!-- CDN VUE 2.5.16-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</body>
+
+
+<!-- SCRIPT de VUE JS -->
+<script>
+    //Vue JS utiliza el patron de diseño MVVM (Model View ViewModel)
+    // El primer componente es el mdoelo---> Encapsula la lógica de la aplicación y acceso a datos
+
+    //La Vista ---> El producto final que el usuario ve de nuestro sistema. la vista es la que define la estructura.
+
+    //La estructura está relacionada con el ViewModel. La vista se relaciona con el ViewModel a través de 'Data Bidings'. La vista le informa al ViewModel cambios que se hayan producido, para que el ViewModel tenga que hacer algo con dicha información.
+
+    //Registro de un componente
+    Vue.component('mi-componente', {
+        template: '<div>Un componente a medida</div>'
+    });
+    //crear instancia principal
+    new Vue({
+        el: '#app'
+    });
+</script>
+
+</html>

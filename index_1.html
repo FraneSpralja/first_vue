@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción || VueJS</title>
+</head>
+
+<body>
+
+    <div id="app">
+        {{message}}
+    </div>
+
+    <!-- VUE CODE -->
+
+
+    <!-- CDN VUE 2.5.16-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+
+
+</body>
+
+<script>
+    const app = new Vue({ //new Vue ----> Palabra reservada
+        el: '#app', //el ----> propiedad del objeto que tiene como valor "app"
+        data: { //data es la propiedad que se utilizará para inicializar las variables. Posee como atributo un objeto.
+            message: 'Hola Frane Spralja!!!'
+        }
+    })
+</script>
+
+</html>
